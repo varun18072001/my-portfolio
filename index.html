@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF_8">
+        <meta http-equiv="X_UA_Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/3894c04878.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <span class="first-letter">V</span>arun K S
+                    </div>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Front-end Developer</p>
+                    <h1>Hi, I'm <span>Varun</span><br>from Bengaluru</h1>
+                </div>
+            </div>
+        </div>
+<!----------------about--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A talented Front-End Developer aspiring
+                       to gain a full-time position in a reputed
+                       company. Gained extensive experience in Front-end
+                       development through projects and training.
+                       A highly motivated and hardworking individual skilled in 
+                       Python, SQL, HTML CSS, Javascript and Django Rest framework.
+                       Seeking a position to utilize the gained skills and experience 
+                       to positively contribute to the company.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>-end</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Mechanical Engineering from BGS Institute of Technology.</li>
+                            <li><span>2019</span><br>PUC from KLE Independent PU College.</li>
+                            <li><span>2017</span><br>SSLC from Max Muller High School.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!----------------srevices----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Devevlopment</h2>
+                <p><ul>
+                    <li>Full-stack web development: Offer to build dynamic and interactive 
+                        websites from scratch using Django for the backend and HTML, CSS, 
+                        JavaScript for the frontend.</li>
+                    <li>Custom web application development: Develop custom web applications 
+                        tailored to the specific needs of clients using Django and Django 
+                        Rest Framework for building APIs.</li>
+                    <li>Responsive website design: Create websites that adapt and perform 
+                        well across various devices and screen sizes using responsive design techniques.</li>
+                </ul></p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Management</h2>
+                <p><ul>
+                    <li>SQL database management: Offer services to design, implement, and 
+                        manage SQL databases using your knowledge of SQL.</li>
+                    <li>Database optimization: Help clients optimize their database 
+                        structures and queries for better performance and scalability.</li>
+                </ul></p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-webflow"></i>
+                <h2>Basic Web Application Development</h2>
+                <p>Develop simple web applications or prototypes using frameworks like Django or Flask. 
+                   Offer services to create basic functionalities such as user registration, 
+                   form submissions, or data visualization.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------portfolio------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/pot.jpg" >
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Created a personal portfolio website using HTML, CSS, and JavaScript to 
+                       display skills, projects, and experience. Ensured it's user-friendly on 
+                       different devices with responsive design.</p>
+                       <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/emp.jpg" >
+                <div class="layer">
+                    <h3>Employee Database</h3>
+                    <p>Created Employee Database using python and Tkinter for GUI 
+                       interface and integrated with MySQl for efficient data management.</p>
+                       <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/guess.jpg" >
+                <div class="layer">
+                    <h3>Number Guessing Game</h3>
+                    <p>Created an interactive number guessing game in Python, allowing users 
+                       to guess a randomly generated number. The program provides hints and 
+                       tracks the number of attempts, offering an engaging and entertaining 
+                       experience for players.</p>
+                       <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/polls.jpg" >
+                <div class="layer">
+                    <h3>Polls Web Application</h3>
+                    <p>Developed a polls web application using Django, Python's web framework. 
+                       This application allows users to view and vote on different polls.</p>
+                       <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!--------------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact</h1>
+                <p><i class="fa-solid fa-envelope"></i> varunks8904@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 9901067819</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/varun-k-s-1871j/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/varun18072001"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Varun K S.</p>
+    </div>
+</div>
+    <script src="script.js"></script>
+    </body>
+</html>
